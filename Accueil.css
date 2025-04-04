@@ -1,0 +1,204 @@
+/* Toute la page */
+@font-face {
+    font-family: "panthera";
+    src: url("fonts/panthera.otf");
+}
+@font-face {
+    font-family: "beyno";
+    src: url("fonts/BEYNO/BEYNO.ttf");
+    src: url("fonts/BEYNO/BEYNO.otf");
+    src: url("fonts/__MACOSX/BEYNO/._BEYNO.ttf");
+    src: url("fonts/__MACOSX/BEYNO/._BEYNO.otf");
+}
+@font-face {
+    font-family: "wakanda-forever";
+    src: url("fonts/WakandaForever-Regular.ttf");
+}
+@font-face {
+    font-family: "cantarell-r";
+    src: url("fonts/Cantarell-Regular.ttf");
+}
+body {
+    background-image: url("Illustrations + Logo/All pages/arrière_plan.png"); /* à optimiser après */
+    color: white;
+}
+li {
+    list-style-type: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* La partie concernant la navigation de gauche, le header, et la première section */
+.lehese {
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+}
+
+/* La navigation de gauche */
+.left {
+    writing-mode: vertical-lr;
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+    inline-size: max-content;
+}
+.left .one {
+    border: 2px solid violet;
+    inline-size: 400px;
+}
+.left .under {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.left .two {
+    border: 2px solid violet;
+    inline-size: 270px;
+}
+.left nav ul {
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+}
+.left nav ul li img {
+    width: 16px;
+}
+
+/* Le header de la page */
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+/* La première section */
+.section1 {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 20px;
+}
+/* Le texte */
+.section1 .divsec1 {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+.section1 .divsec1 button {
+    align-self: flex-start;
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-decoration: underline;
+}
+/* L'image */
+.section1 .imgsec1 img {
+    max-width: 700px;
+}
+
+
+/* La partie principale de la page */
+/* La deuxième section */
+.section2 .div1sec2{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 20px;
+}
+
+/* La troisième section */
+.section3 {
+    column-count: 2;
+    column-gap: 20px;
+}
+
+/* La quatrième section */
+.section4 .formulaire {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 20px;
+}
+.section4 form {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+/* Le label invisible à l'écran mais visible aux lecteurs d'écran */
+.section4 form .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+.section4 input::placeholder, textarea::placeholder {
+    color: #888;
+  }
+/* Méssage de confirmation  */
+.confirmation {
+    display: none;
+}
+#confirmation:target {
+    display: block;
+}
+#confirmation:target ~ .formulaire {
+    display: none;
+}
+
+
+/* Le footer de la page */
+footer {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+footer .div1footer {
+    position: relative;
+}
+footer .div1footer .absolute {
+    position: absolute;
+    top: calc(50% - 33px);
+    left: calc(50% - 70px);
+}
+footer .div2footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 20px;
+}
+footer .div2footer .div3footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+footer .div2footer .div3footer .div4footer {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+footer .div2footer .div3footer .div5footer {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+footer .div2footer .div3footer .div5footer nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}

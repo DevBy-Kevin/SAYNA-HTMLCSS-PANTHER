@@ -1,0 +1,20 @@
+/* Toute la page */
+@font-face {
+    font-family: "panthera";
+    src: url("fonts/panthera.otf");
+}
+@font-face {
+    font-family: "beyno";
+    src: url("fonts/BEYNO/BEYNO.ttf");
+    src: url("fonts/BEYNO/BEYNO.otf");
+    src: url("fonts/__MACOSX/BEYNO/._BEYNO.ttf");
+    src: url("fonts/__MACOSX/BEYNO/._BEYNO.otf");
+}
+@font-face {
+    font-family: "wakanda-forever";
+    src: url("fonts/WakandaForever-Regular.ttf");
+}
+@font-face {
+    font-family: "cantarell-r";
+    src: url("fonts/Cantarell-Regular.ttf");
+}
