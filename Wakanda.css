@@ -20,7 +20,7 @@
 
 
 body {
-    background: url("Illustrations + Logo/All pages/arrière_plan.png") fixed no-repeat;
+    background: url("illustrations_logo/all_pages/arrière_plan.png") fixed no-repeat;
     background-size: cover;
     color: white;
     scroll-behavior: smooth;
@@ -67,7 +67,7 @@ header div a img {
 
 
 footer {
-    background: url("Illustrations + Logo/All pages/back_footer.png") scroll no-repeat;
+    background: url("illustrations_logo/all_pages/back_footer.png") scroll no-repeat;
     background-size: cover;
     display: flex;
     flex-flow: column;
