@@ -48,11 +48,12 @@ li {
     flex-flow: column;
     gap: 5px;
     inline-size: max-content;
-    margin: 0px 10px 0px 30px;
+    margin: 0px 0.75% 0px 2.25%;
 }
 .left .one {
-    border: 2px solid #9E91B7; /* A revoir */
-    inline-size: 400px;
+    border: 2px solid #9E91B7;
+    background-color: #9E91B7;
+    inline-size: 100%;
 }
 .left .under {
     display: flex;
@@ -61,7 +62,9 @@ li {
     justify-content: space-between;
 }
 .left .two {
-    border: 2px solid #9E91B7; /* A revoir */
+    border: 2px solid #9E91B7;
+    background-color: #9E91B7;
+
     inline-size: 270px;
 }
 .left nav ul {
@@ -71,6 +74,7 @@ li {
 }
 .left nav ul li img {
     width: 16px;
+    max-width: 16px;
 }
 
 /* Le header de la page */
@@ -79,13 +83,17 @@ header {
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
-    margin: 25px 120px 20px 20px;
+    margin: 2% 9.6% 1.6% 1.6%;
+}
+header .div2header {
+    width: 40%;
 }
 header nav ul {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    gap: 60px;
+    justify-content: space-between;
+    width: 100%;
 }
 header nav ul li a {
     font-family: "beyno", Verdana, Geneva, Tahoma, sans-serif;
@@ -102,7 +110,7 @@ header div a img {
     display: flex;
     flex-flow: row;
     align-items: center;
-    margin: 0px 0px 0px 70px;
+    margin: 0% 0% 0% 5.58%;
 }
 /* Le texte */
 .section1 .divsec1 {
@@ -135,6 +143,7 @@ header div a img {
 }
 /* L'image */
 .section1 .imgsec1 img {
+    width: 700px;
     max-width: 700px;
 }
 
@@ -149,7 +158,7 @@ header div a img {
     background-color: #021740;
     font-size: 0.875em;
     text-align: justify;
-    margin: 0px 0px 40px 130px;
+    margin: 0% 0% 3% 9.67%;
 }
 .section2 .div1sec2 h2 {
     font-family: "beyno", Verdana, Geneva, Tahoma, sans-serif;
@@ -159,16 +168,19 @@ header div a img {
 }
 /* Les images */
 .section2 .div1sec2 .img1sec2 {
-    width: 286px;
+    display: block;
+    width: 23.4%;
     max-width: 386px;
     margin: 0px 0px 0px 30px;
 }
 .section2 .div1sec2 .img2sec2 {
-    width: 246px;
+    display: block;
+    width: 20.15%;
     max-width: 296px;
 }
 .section2 .div1sec2 .img3sec2 {
-    width: 180px;
+    display: block;
+    width: 15%;
     max-width: 217px;
 }
 /* bouton */
@@ -185,7 +197,7 @@ header div a img {
 .section3 {
     column-width: 410px;
     column-gap: 80px;
-    margin: 120px 120px 0px 120px;
+    margin: 8.95% 8.95% 0% 8.95%;
 }
 /* La partie paragraphes + citations */
 .section3 .divsec3 div {
@@ -199,12 +211,15 @@ header div a img {
     margin: 0px 0px 20px 0px;
 }
 .section3 .divsec3 p {
-    font-size: 0.875em;
+    font-size: 1em;
     margin: 0px 0px 20px 0px;
 }
 .section3 .divsec3 blockquote {
-    font-size: 0.875em;
+    font-size: 0.9em;
     margin: 0px 0px 20px 0px;
+}
+.section3 .divsec3 blockquote  p {
+    margin: 0px;
 }
 /* la partie <aside> */
 .section3 .div1aside {
@@ -223,8 +238,8 @@ header div a img {
     background-color: #ece9f1;
     color: #021740;
     width: 320px;
-    padding: 0px 45px 120px 45px;
-    margin: 100px 0px 120px 0px;
+    padding: 0% 8.8% 23.5% 8.8%;
+    margin: 20% 0% 23.5% 0%;
     border-radius: 10px;
 }
 /* L'image d'illustration aside */
@@ -275,7 +290,7 @@ header div a img {
 
 /* La quatrième section */
 .section4 {
-    margin: 20px 0px 50px 0px;
+    margin: 2% 0px 5% 0px;
 
 }
 .section4 .fondsec4 {
@@ -298,7 +313,7 @@ header div a img {
     border-radius: 200px;
     width: max-content;
     margin: auto;
-    padding: 70px 220px 10px 220px;
+    padding: 5.186% 16.3% 0.741% 16.3%;
 }
 .section4 .formulaire h2 {
     font-size: 2.7em;
@@ -311,29 +326,29 @@ header div a img {
 }
 .section4 form input {
     background-color: transparent;
-    width: 450px;
+    width: 93.37%;
     height: 36px;
     border: 1px solid #021740;
     border-radius: 38px;
-    padding: 5px 5px 5px 25px;
+    padding: 1.325% 1.32% 1.32% 6.55%;
 }
 .section4 form textarea {
     background-color: transparent;
-    width: 450px;
-    height: 150px;
+    width: 93.37%;
+    height: 40.52%;
     border: 1px solid #021740;
     border-radius: 38px;
-    padding: 10px 10px 10px 25px;
-    margin: 10px 0px 10px 0px;
+    padding: 2.65% 2.65% 2.65% 6.55%;
+    margin: 2.65% 0px 2.65% 0px;
 }
 .section4 form #button {
     font-size: 0.875em;
     background-color:  #F2CEF2;
     color: #021740;
     text-transform: uppercase;
-    width: 154px;
-    height: 44px;
-    padding: 5px 10px 5px 10px;
+    width: 35%;
+    height: 12.365%;
+    padding: 1.027% 2.055% 1.027% 2.055%;
 }
 /* Le label invisible à l'écran mais visible aux lecteurs d'écran */
 .section4 form .sr-only {
@@ -368,7 +383,7 @@ footer {
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 100px 0px 100px 0px;
+    padding: 7.45% 0% 7.45% 0%;
 }
 footer .divfooter {
     display: flex;
@@ -379,35 +394,50 @@ footer .divfooter {
 }
 footer .div1footer {
     position: relative;
-    margin: 0px 100px 0px 0px;
+    margin: 0% 10.5% 0% 0%;
+}
+footer .div1footer .imgfooter{
+    width: 100%;
+    max-width: 330px;
 }
 footer .div1footer .absolute {
     position: absolute;
     top: calc(50% - 33px);
     left: calc(50% - 70px);
+    width: 47.5%;
+}
+footer .div1footer .absolute img {
+    width: 100%;
+    max-width: 140px;
 }
 footer .div2footer {
     display: flex;
     flex-flow: column;
-    gap: 20px;
+    justify-content: space-between;
 }
 footer .div2footer .div3footer {
     display: flex;
     flex-flow: row;
+    gap: 40px;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 15%;
 }
-footer .div2footer .div3footer h3 {
-    font-size: 1.375em;
+footer .div2footer .div3footer .div4footer h3 {
+    font-size: 140%;
     letter-spacing: 0.28em;
-    margin-bottom: 40px;
+    margin-bottom: 38%;
+}
+footer .div2footer .div3footer .div5footer h3 {
+    font-size: 140%;
+    letter-spacing: 0.28em;
+    margin-bottom: 13.8%;
 }
 footer .div2footer .div3footer .div4footer {
     display: flex;
     flex-flow: column;
 }
 footer .div2footer .div3footer .div4footer li {
-    margin-bottom: 10px;
+    margin-bottom: 10%;
 }
 footer .div2footer .div3footer .div4footer a {
     text-transform: capitalize;
@@ -422,7 +452,18 @@ footer .div2footer .div3footer .div5footer nav ul {
     flex-flow: row wrap;
     justify-content: space-between;
 }
+footer .div2footer .div3footer .div5footer nav ul li {
+    width: 20%;
+}
+footer .div2footer .div3footer .div5footer nav ul img {
+    width: 90%;
+    max-width: 50px;
+}
+footer .div2footer .div6footer {
+    text-align: center;
+}
 footer .div2footer .div6footer span {
+    line-height: 0px;
     font-size: 2.5em;
     font-weight: 900;
     color: #F2CEF2;

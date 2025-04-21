@@ -7,8 +7,6 @@
     font-family: "beyno";
     src: url("fonts/BEYNO/BEYNO.ttf");
     src: url("fonts/BEYNO/BEYNO.otf");
-    src: url("fonts/__MACOSX/BEYNO/._BEYNO.ttf");
-    src: url("fonts/__MACOSX/BEYNO/._BEYNO.otf");
 }
 @font-face {
     font-family: "wakanda-forever";
@@ -17,4 +15,145 @@
 @font-face {
     font-family: "cantarell-r";
     src: url("fonts/Cantarell-Regular.ttf");
+}
+
+
+
+body {
+    background: url("Illustrations + Logo/All pages/arrière_plan.png") fixed no-repeat;
+    background-size: cover;
+    color: white;
+    scroll-behavior: smooth;
+    font-size: 1em;
+    font-family: "cantarell-r", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+li {
+    list-style-type: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Le header de la page */
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 9.6% 1.6% 1.6%;
+}
+header .div2header {
+    width: 40%;
+}
+header nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+header nav ul li a {
+    font-family: "beyno", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+}
+header div a img {
+    max-width: 140px;
+}
+
+
+
+footer {
+    background: url("Illustrations + Logo/All pages/back_footer.png") scroll no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 7.45% 0% 7.45% 0%;
+}
+footer .divfooter {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 20px;
+    margin: auto;
+}
+footer .div1footer {
+    position: relative;
+    margin: 0% 10.5% 0% 0%;
+}
+footer .div1footer .imgfooter{
+    width: 100%;
+    max-width: 330px;
+}
+footer .div1footer .absolute {
+    position: absolute;
+    top: calc(50% - 33px);
+    left: calc(50% - 70px);
+    width: 47.5%;
+}
+footer .div1footer .absolute img {
+    width: 100%;
+    max-width: 140px;
+}
+footer .div2footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+footer .div2footer .div3footer {
+    display: flex;
+    flex-flow: row;
+    gap: 40px;
+    justify-content: space-between;
+    margin-bottom: 15%;
+}
+footer .div2footer .div3footer .div4footer h3 {
+    font-size: 140%;
+    letter-spacing: 0.28em;
+    margin-bottom: 38%;
+}
+footer .div2footer .div3footer .div5footer h3 {
+    font-size: 140%;
+    letter-spacing: 0.28em;
+    margin-bottom: 13.8%;
+}
+footer .div2footer .div3footer .div4footer {
+    display: flex;
+    flex-flow: column;
+}
+footer .div2footer .div3footer .div4footer li {
+    margin-bottom: 10%;
+}
+footer .div2footer .div3footer .div4footer a {
+    text-transform: capitalize;
+    text-decoration: none;
+}
+footer .div2footer .div3footer .div5footer {
+    display: flex;
+    flex-flow: column;
+}
+footer .div2footer .div3footer .div5footer nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+footer .div2footer .div3footer .div5footer nav ul li {
+    width: 20%;
+}
+footer .div2footer .div3footer .div5footer nav ul img {
+    width: 90%;
+    max-width: 50px;
+}
+footer .div2footer .div6footer {
+    text-align: center;
+}
+footer .div2footer .div6footer span {
+    line-height: 0px;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #F2CEF2;
 }
