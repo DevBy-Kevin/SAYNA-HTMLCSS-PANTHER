@@ -64,7 +64,17 @@ header div a img {
     max-width: 140px;
 }
 
-
+/* La première section */
+.section1 {
+    height: 800px;   
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    border: 2px solid white;
+    background: url("illustrations_logo/wakanda/Pantherwakanda1.png") scroll no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 footer {
     background: url("illustrations_logo/all_pages/back_footer.png") scroll no-repeat;
