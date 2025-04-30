@@ -5,8 +5,10 @@
 }
 @font-face {
     font-family: "beyno";
-    src: url("fonts/BEYNO/BEYNO.ttf");
-    src: url("fonts/BEYNO/BEYNO.otf");
+    src: url("fonts/BEYNO/BEYNO.ttf"),
+         url("fonts/BEYNO/BEYNO.otf"),
+         url("fonts/__MACOSX/BEYNO/._BEYNO.otf"),
+         url("fonts/__MACOSX/BEYNO/._BEYNO.ttf");
 }
 @font-face {
     font-family: "wakanda-forever";
@@ -72,7 +74,7 @@ header div a img {
     justify-content: space-between;
 }
 .section1 .div1sec1 img {
-    width: 570px;
+    width: 650px;
     max-width: 1400px;
 }
 .section1 .div2sec1 h1 {
@@ -86,12 +88,12 @@ header div a img {
     position: relative;
 }
 .section1 .div2sec1 div img {
-    width: 650px;
+    width: 700px;
     max-width: 784px;
 }
 .section1 .div2sec1 div p {
-    width: 500px;
-    max-width: 500px;
+    width: 520px;
+    max-width: 590px;
     position: absolute;
     top: 30%;
     left: 14%;

@@ -5,8 +5,10 @@
 }
 @font-face {
     font-family: "beyno";
-    src: url("fonts/BEYNO/BEYNO.ttf");
-    src: url("fonts/BEYNO/BEYNO.otf");
+    src: url("fonts/BEYNO/BEYNO.ttf"),
+         url("fonts/BEYNO/BEYNO.otf"),
+         url("fonts/__MACOSX/BEYNO/._BEYNO.otf"),
+         url("fonts/__MACOSX/BEYNO/._BEYNO.ttf");
 }
 @font-face {
     font-family: "wakanda-forever";
