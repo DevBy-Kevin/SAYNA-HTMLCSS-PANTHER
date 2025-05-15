@@ -139,36 +139,26 @@ footer .div2footer .div6footer span {
 
 
 
-/*********ANIMATIONS*********/
-/* Définition de l'animation */
-@keyframes wakandaFadeIn {
-    0% {
+/**
+***ANIMATIONS
+**/
+/* Animation fade-in de gauche à droite pour la page */
+body {
+    opacity: 0;
+    animation: fadeInLeft 1.2s ease-out forwards;
+}
+
+@keyframes fadeInLeft {
+    from {
         opacity: 0;
-        transform: translateX(-50px);
+        transform: translateX(-40px);
     }
-    100% {
+    to {
         opacity: 1;
         transform: translateX(0);
     }
 }
-/* Application à tous les éléments principaux */
-header, 
-.section1, 
-.section2, 
-.section3, 
-.section4, 
-footer,
-h1, h2, h3, h4, p,
-img, .formulaire {
-    animation: wakandaFadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-/* Délais progressifs pour un effet cascade */
-header { animation-delay: 0.1s; }
-.section1 { animation-delay: 0.3s; }
-.section2 { animation-delay: 0.5s; }
-.section3 { animation-delay: 0.7s; }
-.section4 { animation-delay: 0.9s; }
-footer { animation-delay: 1.1s; }
+
 
 /* 
 **header_global.css_ANIMATION 
@@ -265,3 +255,180 @@ footer * {
 /*
 **A Nous Le RESPONSIVE DESIGN
 */
+/* Version Desktop (base) */
+footer {
+    background: url("illustrations_logo/all_pages/back_footer.png") center/cover;
+    padding: 5% 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Version Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    footer {
+        padding: 8% 0;
+        background-position: 60% center;
+    }
+
+    .divfooter {
+        flex-direction: column;
+        gap: 40px !important;
+    }
+
+    .div1footer {
+        margin: 0 auto 5% !important;
+        text-align: center;
+    }
+
+    .div1footer .absolute {
+        top: 35% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 30% !important;
+    }
+
+    .div3footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px !important;
+    }
+
+    /* Effet "Vibranium Pulse" sur mobile */
+    footer::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at center, 
+                   rgba(158, 145, 183, 0.2) 0%, 
+                   transparent 70%);
+        animation: vibraniumPulse 8s infinite;
+    }
+}
+
+/* Version Mobile (< 768px) - Transformation radicale */
+@media (max-width: 768px) {
+    footer {
+        padding: 15% 5%;
+        background: linear-gradient(135deg, #3D2DA6 0%, #021740 100%);
+    }
+
+    .divfooter {
+        flex-direction: column-reverse;
+    }
+
+    .div1footer {
+        margin-top: 10% !important;
+    }
+
+    .div1footer .imgfooter {
+        max-width: 250px !important;
+        filter: drop-shadow(0 0 10px #F2CEF2);
+    }
+
+    .div1footer .absolute {
+        width: 40% !important;
+        top: 30% !important;
+    }
+
+    .div3footer {
+        flex-direction: column;
+    }
+
+    .div4footer, .div5footer {
+        text-align: center;
+        margin-bottom: 8%;
+    }
+
+    .div5footer nav ul {
+        justify-content: center !important;
+        gap: 15px !important;
+    }
+
+    .div5footer nav ul img {
+        width: 70% !important;
+        transition: all 0.3s;
+    }
+
+    .div5footer nav ul img:hover {
+        transform: scale(1.2) rotate(10deg);
+        filter: brightness(1.5);
+    }
+
+    /* Animation texte "Wakanda Forever" */
+    .div6footer p {
+        position: relative;
+        font-size: 0.9em;
+    }
+
+    .div6footer p::after {
+        content: "Wakanda Forever";
+        position: absolute;
+        left: 0;
+        top: -20px;
+        width: 100%;
+        text-align: center;
+        color: #F2CEF2;
+        font-family: 'panthera', sans-serif;
+        animation: textGlow 2s infinite alternate;
+    }
+}
+
+/* Version Très Petit Mobile (< 480px) - Mode "Holoprojecteur" */
+@media (max-width: 480px) {
+    footer {
+        border-top: 2px solid #F2CEF2;
+        box-shadow: 0 -10px 30px rgba(242, 206, 242, 0.3);
+    }
+
+    .div1footer {
+        transform: scale(0.9);
+    }
+
+    .div5footer nav ul {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start !important;
+        padding-bottom: 10px;
+    }
+
+    .div5footer nav ul::-webkit-scrollbar {
+        height: 3px;
+        background: #021740;
+    }
+
+    .div5footer nav ul::-webkit-scrollbar-thumb {
+        background: #F2CEF2;
+        border-radius: 10px;
+    }
+
+    /* Effet holographique */
+    .divfooter::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: 
+            linear-gradient(0deg, 
+                transparent 0%, 
+                rgba(158, 145, 183, 0.05) 50%, 
+                transparent 100%);
+        pointer-events: none;
+    }
+}
+
+/* Animations Clés */
+@keyframes vibraniumPulse {
+    0% { transform: scale(0.95); opacity: 0.7; }
+    50% { transform: scale(1.1); opacity: 0.3; }
+    100% { transform: scale(0.95); opacity: 0.7; }
+}
+
+@keyframes textGlow {
+    from { text-shadow: 0 0 5px #F2CEF2; }
+    to { text-shadow: 0 0 15px #9E91B7, 0 0 20px #F2CEF2; }
+}
