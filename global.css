@@ -1,0 +1,267 @@
+/* 
+**Toute la page 
+*/
+@font-face {
+    font-family: "panthera";
+    src: url("fonts/panthera.otf");
+}
+@font-face {
+    font-family: "beyno";
+    src: url("fonts/BEYNO/BEYNO.ttf"),
+         url("fonts/BEYNO/BEYNO.otf"),
+         url("fonts/__MACOSX/BEYNO/._BEYNO.otf"),
+         url("fonts/__MACOSX/BEYNO/._BEYNO.ttf");
+}
+@font-face {
+    font-family: "wakanda-forever";
+    src: url("fonts/WakandaForever-Regular.ttf");
+}
+@font-face {
+    font-family: "cantarell-r";
+    src: url("fonts/Cantarell-Regular.ttf");
+}
+body {
+    background: url("illustrations_logo/all_pages/arrière_plan.png") fixed no-repeat;
+    background-size: cover;
+    color: white;
+    scroll-behavior: smooth;
+    font-size: 1em;
+    font-family: "cantarell-r", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+li {
+    list-style-type: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 
+**Le footer de la page 
+*/
+footer {
+    background: url("illustrations_logo/all_pages/back_footer.png") scroll no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 7.45% 0% 7.45% 0%;
+}
+footer .divfooter {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 20px;
+    margin: auto;
+}
+footer .div1footer {
+    position: relative;
+    margin: 0% 10.5% 0% 0%;
+}
+footer .div1footer .imgfooter{
+    width: 100%;
+    max-width: 330px;
+}
+footer .div1footer .absolute {
+    position: absolute;
+    top: 42%;
+    left: 26.5%;
+    width: 47.5%;
+}
+footer .div1footer .absolute img {
+    width: 100%;
+    max-width: 140px;
+}
+footer .div2footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+footer .div2footer .div3footer {
+    display: flex;
+    flex-flow: row;
+    gap: 40px;
+    justify-content: space-between;
+    margin-bottom: 15%;
+}
+footer .div2footer .div3footer .div4footer h3 {
+    font-size: 140%;
+    letter-spacing: 0.28em;
+    margin-bottom: 38%;
+}
+footer .div2footer .div3footer .div4footer a:hover{
+    color: white;
+    text-decoration: underline;
+}
+footer .div2footer .div3footer .div5footer h3 {
+    font-size: 140%;
+    letter-spacing: 0.28em;
+    margin-bottom: 13.8%;
+}
+footer .div2footer .div3footer .div4footer {
+    display: flex;
+    flex-flow: column;
+}
+footer .div2footer .div3footer .div4footer li {
+    margin-bottom: 10%;
+}
+footer .div2footer .div3footer .div4footer a {
+    text-transform: capitalize;
+    text-decoration: none;
+}
+footer .div2footer .div3footer .div5footer {
+    display: flex;
+    flex-flow: column;
+}
+footer .div2footer .div3footer .div5footer nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+footer .div2footer .div3footer .div5footer nav ul li {
+    width: 20%;
+}
+footer .div2footer .div3footer .div5footer nav ul img {
+    width: 90%;
+    max-width: 50px;
+}
+footer .div2footer .div6footer {
+    text-align: center;
+}
+footer .div2footer .div6footer span {
+    line-height: 0px;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #F2CEF2;
+}
+
+
+
+/*********ANIMATIONS*********/
+/* Définition de l'animation */
+@keyframes wakandaFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* Application à tous les éléments principaux */
+header, 
+.section1, 
+.section2, 
+.section3, 
+.section4, 
+footer,
+h1, h2, h3, h4, p,
+img, .formulaire {
+    animation: wakandaFadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+/* Délais progressifs pour un effet cascade */
+header { animation-delay: 0.1s; }
+.section1 { animation-delay: 0.3s; }
+.section2 { animation-delay: 0.5s; }
+.section3 { animation-delay: 0.7s; }
+.section4 { animation-delay: 0.9s; }
+footer { animation-delay: 1.1s; }
+
+/* 
+**header_global.css_ANIMATION 
+*/
+/* Styles de base du header (communs à toutes les pages) */
+header nav a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Effet de survol (commun) */
+header nav a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: white;
+    animation: underlineGrow 0.3s ease-out;
+}
+@keyframes underlineGrow {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+}
+/*STYLE ACTIF */
+header nav a.active {
+    color: #9E91B7;
+    font-weight: bold;
+    position: relative; /* Nécessaire pour le pseudo-élément */
+}
+header nav a.active::after {
+    content: "" !important; /* Force l'affichage */
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: #9E91B7 !important;
+    opacity: 1 !important; /* Garantit la visibilité */
+}
+/* Style de base du logo */
+header div a img {
+    transition: 
+        filter 0.4s ease-out,
+        transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+header div a:hover img {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='wakandaPurple'><feColorMatrix type='matrix' values='0.4 0 0 0 0 0 0.35 0 0 0 0 0 0.45 0 0 0 0 0 1 0'/></filter></svg>#wakandaPurple");
+    transform: scale(1.05);
+}
+
+/* 
+**footer_global.css_ANIMATION 
+*/
+.div1footer:hover .imgfooter,
+.div1footer:hover .absolute img {
+    transform: scale(1.1);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+/* Changement de couleur pour SAYNA x MARVEL */
+.div1footer .absolute img {
+    transition: 
+        transform 0.4s ease,
+        filter 0.4s ease;
+}
+.div1footer:hover .absolute img {
+    filter: brightness(0) invert(1) sepia(1) hue-rotate(250deg) saturate(4);
+}/* Container des icônes sociales */
+.div5footer nav ul {
+    position: relative;
+    transition: transform 0.4s ease;
+}
+/* Effet de zoom groupé */
+.div5footer:hover nav ul {
+    transform: scale(1.1);
+}
+/* Animation individuelle des icônes */
+.div5footer nav ul img {
+    transition: transform 0.3s ease;
+}
+.div5footer nav ul li:hover img {
+    transform: scale(1.2) rotate(10deg);
+}
+/* Assure la fluidité des animations */
+footer * {
+    transform-origin: center;
+}
+
+
+
+/*
+**A Nous Le RESPONSIVE DESIGN
+*/
