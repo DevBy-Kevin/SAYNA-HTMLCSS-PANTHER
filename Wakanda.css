@@ -27,6 +27,7 @@ header nav ul li a {
     text-decoration: none;
 }
 header div a img {
+    width: 140px;
     max-width: 140px;
 }
 
@@ -39,7 +40,7 @@ header div a img {
     flex-flow: row;
     align-items: center;
     background: url("illustrations_logo/wakanda/Pantherwakanda1.png") scroll no-repeat top left;
-    background-size: contain;
+    background-size: cover;
 }
 .section1 .divsec1 {
     margin: 0% 0% 0% 12%;
@@ -73,8 +74,7 @@ header div a img {
     column-gap: 9%;
     padding: 9% 0% 0% 0%;
     margin: 0% 7.5% 4% 7.5%;
-    background: url("illustrations_logo/wakanda/Pantherwakanda2.png") scroll no-repeat top center;
-    background-size: contain;
+    background: url("illustrations_logo/wakanda/Pantherwakanda2.png") scroll no-repeat top center/contain;
 }
 .section2 div {
     margin: 0% 0% 12% 0%;
@@ -104,4 +104,58 @@ header div a img {
 .section2 div img {
     width: 100%;
     max-width: 640px;
+}
+
+
+/*
+**A Nous Le RESPONSIVE DESIGN
+*/
+/**** Le header ****/
+@media screen and (max-width: 540px) {
+    header {
+        margin-bottom: 0px;
+    }
+    header div a img {
+        max-width: 120px;
+    }
+    header nav ul {
+        flex-flow: column wrap;
+        align-self: flex-end;
+        gap: 3px;
+    }
+}
+
+/**** La première section ****/
+@media screen and (max-width: 950px) {
+    .section1 {
+        height: 550px;
+        background: url("illustrations_logo/wakanda/Pantherwakanda1.1.png") scroll no-repeat top left/cover;
+    }
+}
+@media screen and (max-width: 575px) {
+    .section1 {
+        height: 500px;
+    }
+    .section1 .divsec1 h1 {
+        font-size: 3.5em;
+    }
+    .section1 .divsec1 .div1sec1 h2 {
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 445px) {
+    .section1 .divsec1 h1 {
+        font-size: 2.8em;
+    }
+    .section1 .divsec1 .div1sec1 h2 {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 345px) {
+    .section1 .divsec1 h1 {
+        font-size: 2.5em;
+    }
+    .section1 .divsec1 .div1sec1 h2 {
+        font-size: 1.3em;
+    }
 }
