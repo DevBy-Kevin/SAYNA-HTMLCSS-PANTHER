@@ -322,16 +322,13 @@ header div a img {
 }
 @media screen and (max-width: 950px) {
     .section2 h2 {
-        font-size: 2.1em;
+        font-size: 2em;
     }
 }
-@media screen and (max-width: 885px) {
-    /* .section2 {
-        margin: 0;
-    } */
+@media screen and (max-width: 890px) {
     .section2 h2 {
-        margin-left: 25px;
-        font-size: 2.1em;
+        font-size: 1.7em;
+        font-weight: 900;
     }
     .section2 .divsec2 {
         flex-flow: column;
@@ -362,9 +359,55 @@ header div a img {
         text-align: center;
     }
 }
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 630px) {
     #invisible div {
+        width: 85%;
         top: 26%;
         left: 9%;
+    }
+    .section2 .divsec2 .div1sec2 .div12sec2 form #reponse {
+        width: 90%;
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 520px) {
+    #invisible div {
+        top: 18%;
+        left: 8%;
+    }
+    #invisible img {
+        margin-bottom: 100px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .section2 {
+        padding-right: 20px;
+    }
+    #invisible div {
+        width: 90%;
+        top: 15%;
+        left: 6%;
+    }
+    .section2 .divsec2 .div1sec2 .div12sec2 form #reponse {
+        width: 380px;
+    }
+}
+@media screen and (max-width: 420px) {
+    #invisible div {
+        width: 95%;
+        left: 15px;
+    }
+    .section2 .divsec2 .div1sec2 .div12sec2 form #reponse {
+        width: 300px;
+    }
+    .section2 .divsec2 .div1sec2 .div12sec2 form #button {
+        border-radius: 30px;
+        width: 100px;
+        height: 35px;
+        padding: 0px 10px 0px 10px;
+    }
+    #invisible img {
+        margin-top: 20px;
+        margin-bottom: 180px;
     }
 }
