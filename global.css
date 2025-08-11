@@ -21,7 +21,24 @@
     src: url("fonts/Cantarell-Regular.ttf");
 }
 body {
-    background: url("illustrations_logo/all_pages/arrière_plan.png") fixed no-repeat;
+  /* Couleur de fond de sécurité */
+  background-color: #021740;
+
+  /* Dégradé radial corrigé */
+  background-image: radial-gradient(
+    200% 200% at -21.35% 0%, /* Plus grand pour couvrir toute la page */
+    #11213F 0%,
+    #0B0B0B 39.1%,
+    rgba(2, 23, 64, 0.8376) 94.57%,
+    rgba(2, 23, 64, 0) 100%
+  );
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Toujours plein écran */
+}
+body {
+    /* background: url("illustrations_logo/all_pages/arrière_plan.png") fixed no-repeat; */
     background-size: cover;
     color: white;
     scroll-behavior: smooth;
@@ -49,7 +66,12 @@ li {
 **Le footer de la page 
 */
 footer {
-    background: url("illustrations_logo/all_pages/back_footer.png") scroll no-repeat;
+    /* background: url("illustrations_logo/all_pages/back_footer.png") scroll no-repeat; */
+    background: linear-gradient(
+    180deg,
+    #3D2DA6 0%,
+    #010d24 90.43%
+    );
     background-size: cover;
     display: flex;
     flex-flow: column wrap;
